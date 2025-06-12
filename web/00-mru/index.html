@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calcular distancia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
-    <button class="button-theme">tema</button>
-    <main class="main">
-        <section class="main-section">
-            <form action="" class="form">
-                <label class="form-label"><input type="text" class="form-input"></label>
-                <label class="form-label"><input type="text" class="form-input"></label>
-                <button class="form-button">evaluar</button></form>
-        </section>
-    </main>
-    
+    <h1>calcular la distancia</h1>
+    <button class="button-theme"></button>
+    <form class="form">
+    <label for="vel" class="form-label"> movimiento 
+        <input name="vel"
+        type="number"/>    
+
+    </label>
+    <label for="t">tiempo</label>
+    <input type="number" name="time">
+        <p class="form-par">distancia recorrida</p>
+    <button class="form-bt">evaluar</button>
+</form>
+<div class="r"></div>
+<script src="main.js"></script>
 </body>
 </html>
