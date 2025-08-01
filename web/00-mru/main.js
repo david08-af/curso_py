@@ -9,11 +9,12 @@ const dis = $(".form-parc")
 let theme = window.matchMedia("(prefers-color-scheme: dark)")?"dark": "ligth"
 bt.addEventListener("click", () => { 
     let newTheme = theme === "ligth"? "dark":"ligth"
-    setTheme(newTheme)
-    theme=newTheme
-    console.log(theme);
-})
-function setTheme(newTheme){
-    html.setAttribute("data-theme",theme)
-}
-setTheme(theme)
+        setTheme(newTheme)
+            theme=newTheme
+                console.log(theme);
+                })
+                function setTheme(newTheme){
+                    html.setAttribute("data-theme",theme)
+                    }
+                    setTheme(theme)
+                    
