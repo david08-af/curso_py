@@ -1,7 +1,7 @@
 import data from "./data.js"
 
 const d = document
-const $ = s => d.querySelector(s)
+export const $ = s => d.querySelector(s)
 const $$ = s => d.querySelectorAll(s)
 
 // seleccionar los elementos de nuestro html
@@ -10,7 +10,7 @@ const formSearch = $(".form-search")
 const contentTable = $(".content-tablet")
 
 //funcion que creara la tabla con contenido dinamico 
-function createTable() {
+export function createTable() {
     let tr = ""
     //agregando los datos de formas dinamicas y externas 
     data.forEach(el =>{
@@ -50,9 +50,9 @@ formSearch.addEventListener("submit", (ev) => {
   rows.forEach(row => {
     
     if (row.textContent.includes(search)) {
-      row.classList.add("filter")
+        row.classList.remove("filter")
     } else {
-      row.classList.remove("filter")
+        row.classList.add("filter")
     }
   })
 })
